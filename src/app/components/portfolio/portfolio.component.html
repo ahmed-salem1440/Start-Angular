@@ -1,0 +1,71 @@
+<div class="text-center">
+  <app-star-title
+    [title]="starTitle"
+    [fontColor]="starColor"
+    [displayLevel]="displayLevel"
+  ></app-star-title>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-5">
+      <div
+        *ngFor="let portfolio of portfolios"
+        class="col"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <div class="position-relative rounded-3 overflow-hidden">
+          <div class="roundedCard">
+            <img [src]="portfolio.imgPath" class="rounded-3" alt="" />
+            <div
+              (click)="
+                isNotShow = false;
+                imgSrc = portfolio.imgPath;
+                imgTitle = portfolio.title
+              "
+              class="layer_ position-absolute start-0 w-100 top-0 h-100"
+            >
+              <i class="fa-solid fa-plus fa-10x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade p-4"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content m-4 text-center">
+      <app-star-title class="m-4"
+        [title]="imgTitle"
+        [fontColor]="starColor"
+        [displayLevel]="detaisDisplayLevel"
+      ></app-star-title>
+      <div class="imgContainer w-75 mx-auto ">
+        <img [src]="imgSrc" class="mb-4" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+          neque assumenda ipsam nihil, molestias magnam, recusandae quos quis
+          inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos
+          quod consequuntur itaque. Nam.
+        </p>
+      </div>
+
+      <button type="button" data-bs-dismiss="modal" class="btn mb-4">
+        <i class="fa-solid fa-xmark fa-xl"></i>
+        Close Window
+      </button>
+      <i
+        data-bs-dismiss="modal"
+        id="closeIcon"
+        class="fa-solid fa-xmark fa-3x"
+      ></i>
+    </div>
+  </div>
+</div>

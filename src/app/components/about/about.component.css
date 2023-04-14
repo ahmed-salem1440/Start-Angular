@@ -1,0 +1,10 @@
+.about{
+    background-color: var(--main-color);
+}
+p{
+    font-weight: 500;
+    font-size: large;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+}

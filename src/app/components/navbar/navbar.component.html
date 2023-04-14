@@ -1,0 +1,24 @@
+<nav #navRef (window:scroll)="scrollAnimation(navRef)" class="navbar p-4 fixed-top navbar-expand-lg navbar-dark" data-bs-theme="dark">
+    <div class="container-md">
+      <a id="startAngular" class="navbar-brand text-md-start" href="#">START ANGULAR</a>
+      <button class="customToggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        MENU <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+          <li class="nav-item mb-4">
+            <a class="text-uppercase " routerLinkActive="activeLink text-white" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item mb-4">
+            <a class="text-uppercase" routerLinkActive="activeLink text-white" routerLink="portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mb-4">
+            <a class="text-uppercase" routerLinkActive="activeLink text-white" routerLink="about">About</a>
+          </li>
+          <li class="nav-item mb-4">
+            <a class="text-uppercase" routerLinkActive="activeLink text-white" routerLink="contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

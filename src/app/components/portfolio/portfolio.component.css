@@ -1,0 +1,52 @@
+img{
+    border-radius: 10px;
+    width: 100%;
+}
+.layer_{
+    opacity: 0;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+.layer_:hover {
+    opacity: 0.9;
+}
+.layer_ i{
+    color: white;
+}
+
+.roundedCard{
+    border-radius: 10px;
+}
+
+#closeIcon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--main-color);
+    cursor: pointer;
+
+}
+
+button{
+    background-color: var(--main-color);
+    color: white;
+    width: fit-content;
+    margin: auto;
+}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+button:hover{
+    background-color:#03ac8a;
+    color: white;
+}
+app-star-title{
+    position: relative;
+    top: 30px;
+}

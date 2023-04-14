@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --main-color: #1abc9c;
+    --secondary-color:#2c3e50;
+}
+
+router-outlet + * > div 
+{
+    min-height: inherit;
+}
+router-outlet + * 
+{
+    min-height: inherit;
+}

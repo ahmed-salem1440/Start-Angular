@@ -1,0 +1,23 @@
+.main{
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    text-justify: inter-word;
+}
+button{
+    border: none;
+    background-color: white;
+    color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+}
